@@ -2,11 +2,11 @@ const {isEmail} = require('valiend');
 const userServices = require('./user.services');
 
 class userController {
-    async createUser(req,res,next){
+    async create(req,res,next){
         try {
             const {email , password} = req.body;
             if(isEmail(email) === true){
-                const result = await userServices.createUser(email,password);
+                const result = await userServices.create(email,password);
                 if(result === true){
                     res.status = 201;
                     res.send('user created successfully')
@@ -26,6 +26,24 @@ class userController {
                 }
             }
             
+        } catch (err) {
+            next(err)
+        }
+    }
+    async authentication(req,res,next){
+        try {
+            const {email,password} = req.body;
+            const result = await userServices.authentication(email,password);
+            if(result === true){
+                res.status = 200;
+                res.send('valid auth')
+            }
+            else{
+                throw{
+                    status : 401,
+                    message : 'invalid auth'
+                }
+            }
         } catch (err) {
             next(err)
         }
