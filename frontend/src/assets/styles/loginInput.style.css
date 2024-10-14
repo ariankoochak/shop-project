@@ -1,0 +1,52 @@
+.login-input{
+    border: 3px solid #387478;
+    border-radius: 12px;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-input h3{
+    cursor: default;
+    font-size: 30px;
+    color: #387478;
+}
+
+.login-input input{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border: 2px solid #387478;
+    border-radius: 8px;
+    background-color: inherit;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.login-input input:focus{
+    outline: none;
+}
+
+.login-input button{
+    width: 86%;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    background-color: #387478;
+    color: white;
+}
+
+.login-input .text{
+    display: block;
+    cursor: default;
+    margin-top: 20px;
+}
+
+.login-input .text .sign-up{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #387478;
+    font-weight: 700;
+}
