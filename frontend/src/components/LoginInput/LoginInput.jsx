@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../../assets/styles/loginInput.style.css'
 import { useNavigate } from 'react-router-dom';
 
+//TODO: after make API in backend => add authentication and validation datas for login
 export default function LoginInput() {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');

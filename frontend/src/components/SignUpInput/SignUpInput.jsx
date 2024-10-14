@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/signUpInput.style.css'
 
+//TODO: after make API in backend => add authentication and validation datas for sign up
 export default function SignUpInput() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
