@@ -20,7 +20,7 @@ class userServices {
                 return false
             }
             else{
-                return true
+                return result
             }
         } catch (err) {
             return err

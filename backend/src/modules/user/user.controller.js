@@ -34,9 +34,9 @@ class userController {
         try {
             const {email,password} = req.body;
             const result = await userServices.authentication(email,password);
-            if(result === true){
+            if(result !== false){
                 res.status = 200;
-                res.send('valid auth')
+                res.send(result)
             }
             else{
                 throw{
