@@ -1,0 +1,24 @@
+.category-card img{
+    width: 100%;
+}
+
+.category-card{
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+
+.category-card .title{
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 8px;
+}
+
+.category-card h3{
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+}
