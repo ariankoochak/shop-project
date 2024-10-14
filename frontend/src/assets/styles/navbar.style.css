@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.navbar ul{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 20px 5%;
+    color: #214548;
+    cursor: pointer;
+}
+
+.selected-li{
+    text-decoration: underline;
+    font-weight: 600;
+}
