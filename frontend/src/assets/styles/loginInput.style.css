@@ -4,6 +4,7 @@
     width: 500px;
     text-align: center;
     padding: 20px;
+    display: inline-block;
 }
 
 .login-input h3{
