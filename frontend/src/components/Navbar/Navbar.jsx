@@ -9,8 +9,6 @@ export default function Navbar({selectedPage}) {
     }
     const handleClickPage = (pathName)=>{
         const path = "/" + pathName;
-        console.log(path);
-        
         navigate(path)
     }
   return (
