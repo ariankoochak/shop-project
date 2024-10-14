@@ -21,9 +21,9 @@ export default function SignUpInput() {
     }
 
     const handleClickLogin = ()=>{
-        navigate('/')
+        navigate('/login')
     }
-    
+
   return (
     <div className='sign-up-input'>
         <h3>Darhamarket</h3>
