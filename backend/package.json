@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon index.js",
-    "start" : "node index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Arian Koochak",
@@ -14,7 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "mongoose": "^8.7.1"
+    "mongoose": "^8.7.1",
+    "valiend": "^1.1.1"
   },
   "devDependencies": {
     "chalk": "^4.0.0",
