@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function ProfileSetting() {
   return (
-    <div>ProfileSetting</div>
+    <>
+        <Navbar selectedPage={'profile'}/>
+    </>
   )
 }
