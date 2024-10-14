@@ -3,6 +3,8 @@ const chalk = require('chalk');
 const app = express();
 const PORT = 3000;
 
+require('./src/config/mongoose/mongoose.config')
+
 const allRoutes = require('./src/modules/routes/routes');
 
 app.use(allRoutes)
