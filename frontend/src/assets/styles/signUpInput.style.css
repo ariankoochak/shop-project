@@ -1,0 +1,53 @@
+.sign-up-input{
+    border: 3px solid #387478;
+    border-radius: 12px;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+
+.sign-up-input h3{
+    cursor: default;
+    font-size: 30px;
+    color: #387478;
+}
+
+.sign-up-input input{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border: 2px solid #387478;
+    border-radius: 8px;
+    background-color: inherit;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.sign-up-input input:focus{
+    outline: none;
+}
+
+.sign-up-input button{
+    width: 86%;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    background-color: #387478;
+    color: white;
+}
+
+.sign-up-input .text{
+    display: block;
+    cursor: default;
+    margin-top: 20px;
+}
+
+.sign-up-input .text .sign-up{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #387478;
+    font-weight: 700;
+}
