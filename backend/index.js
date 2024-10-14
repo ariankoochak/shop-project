@@ -2,10 +2,15 @@ const express = require('express');
 const chalk = require('chalk');
 const app = express();
 const PORT = 3000;
-
-require('./src/config/mongoose/mongoose.config')
-
 const allRoutes = require('./src/modules/routes/routes');
+const cors = require("cors");
+
+require('./src/config/mongoose/mongoose.config');
+
+
+app.use(cors({ origin: "http://localhost:3001", credentials: true }));
+
+app.use(express.json());
 
 app.use(allRoutes);
 app.use((err, req, res, next) => {
