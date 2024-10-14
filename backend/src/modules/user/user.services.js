@@ -26,6 +26,15 @@ class userServices {
             return err
         }
     }
+
+    async resetPassword(email,oldPassword,newPassword){
+         try {
+            const result = await userModel.updateOne({email : email,password : oldPassword},{$set : {password : newPassword}})
+            return result;
+        } catch (err) {
+            return err
+        }
+    }
 }
 
 module.exports = new userServices();
