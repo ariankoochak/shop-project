@@ -1,12 +1,14 @@
 const { isEmail } = require("valiend");
+const md5 = require("md5");
 const userServices = require("./user.services");
+
 
 class userController {
     async create(req, res, next) {
         try {
             const { email, password } = req.body;
             if (isEmail(email) === true) {
-                const result = await userServices.create(email, password);
+                const result = await userServices.create(email, md5(password));
                 if (result === true) {
                     res.status = 201;
                     res.send("user created successfully");
@@ -29,7 +31,7 @@ class userController {
     async authentication(req, res, next) {
         try {
             const { email, password } = req.body;
-            const result = await userServices.authentication(email, password);
+            const result = await userServices.authentication(email, md5(password));
             if (result !== false) {
                 res.status = 200;
                 res.send(result);
@@ -46,7 +48,7 @@ class userController {
     async resetPassword(req, res, next) {
         try {
             const { email, oldPassword,newPassword } = req.body;
-            const result = await userServices.resetPassword(email,oldPassword,newPassword);
+            const result = await userServices.resetPassword(email,md5(oldPassword),md5(newPassword));
             if(result?.modifiedCount){
                 res.status = 201;
                 res.send('ok')
