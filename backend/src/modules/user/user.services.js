@@ -38,6 +38,7 @@ class userServices {
 
     async addToBasket(email,productId,count){
         try {
+            //FIXME: fix find with mongoDB and add update
             const checkForDuplicate = await userModel.findOne({email : email,liveBasket : [productId,count-1]});
             if(checkForDuplicate === null){
                 return await userModel.updateOne({email : email},{$push : {liveBasket : [productId,count]}});

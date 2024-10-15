@@ -69,6 +69,7 @@ class userController {
         try {
             const {email,productId,count} = req.body;
             const validateProductId = productServices.getById(productId);
+            //FIXME: continue this code
             if(validateProductId !== null){
                 const result = await userServices.addToBasket(email,productId,count);
                 console.log(result);
