@@ -69,11 +69,15 @@ class userController {
         try {
             const {email,productId,count} = req.body;
             const validateProductId = productServices.getById(productId);
-            //FIXME: continue this code
             if(validateProductId !== null){
-                const result = await userServices.addToBasket(email,productId,count);
-                console.log(result);
-                res.send(result)
+                const result = await userServices.changeBasket(email,productId,Number(count));
+                if(result?.modifiedCount === 1){
+                    res.status = 201;
+                    res.send('updated successfully')
+                }
+                else{
+                    throw{}
+                }
             }
         } catch (err) {
             next(err)

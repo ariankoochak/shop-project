@@ -36,15 +36,28 @@ class userServices {
         }
     }
 
-    async addToBasket(email,productId,count){
+    async changeBasket(email,productId,count){
         try {
-            //FIXME: fix find with mongoDB and add update
-            const checkForDuplicate = await userModel.findOne({email : email,liveBasket : [productId,count-1]});
-            if(checkForDuplicate === null){
-                return await userModel.updateOne({email : email},{$push : {liveBasket : [productId,count]}});
+            const user = await userModel.findOne({email : email});
+            if(user === null){
+                return false
             }
             else{
-                return checkForDuplicate;
+                const pushArr = []
+                let flag = false
+                for (const product of user.liveBasket) {
+                    if(product[0] === productId){
+                        flag = true
+                        pushArr.push([product[0],product[1]+count])
+                    }
+                    else{
+                        pushArr.push(product)
+                    }
+                }
+                if(flag === false){
+                    pushArr.push([productId,count])
+                }
+                return await userModel.updateOne({email : email},{$set : {liveBasket : [...pushArr]}});
             }
         } catch (err) {
             return err
