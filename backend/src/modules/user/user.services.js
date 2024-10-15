@@ -1,3 +1,4 @@
+const { productModel } = require("../product/product.model");
 const { userModel } = require("./user.model");
 
 class userServices {
@@ -61,6 +62,28 @@ class userServices {
                 }
                 return await userModel.updateOne({email : email},{$set : {liveBasket : [...pushArr]}});
             }
+        } catch (err) {
+            return err
+        }
+    }
+
+    async getBasket(email){
+        try {                       
+            const basket = await userModel.findOne({email : email},{liveBasket:1,_id : 0});
+            const result = [];
+            for(const record of basket.liveBasket){
+                const productData = await productModel.findById(record[0])
+                const pushObj = {
+                    id : productData._id,
+                    name : productData.name,
+                    price : productData.price,
+                    category : productData.category,
+                    imageName : productData.imageName,
+                    count : record[1]
+                }
+                result.push(pushObj);
+            }
+            return result
         } catch (err) {
             return err
         }

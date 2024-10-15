@@ -71,6 +71,16 @@ class userController {
         }
     }
 
+    async getBasket(req,res,next){
+        try {
+            const {email} = req.body;
+            const result = await userServices.getBasket(email);
+            res.send(result);
+        } catch (err) {
+            next(err)
+        }
+    }
+
     async addToBasket(req, res, next) {
         try {
             const { email, productId, count } = req.body;
