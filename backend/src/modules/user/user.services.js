@@ -35,6 +35,20 @@ class userServices {
             return err
         }
     }
+
+    async addToBasket(email,productId,count){
+        try {
+            const checkForDuplicate = await userModel.findOne({email : email,liveBasket : [productId,count-1]});
+            if(checkForDuplicate === null){
+                return await userModel.updateOne({email : email},{$push : {liveBasket : [productId,count]}});
+            }
+            else{
+                return checkForDuplicate;
+            }
+        } catch (err) {
+            return err
+        }
+    }
 }
 
 module.exports = new userServices();

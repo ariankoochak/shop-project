@@ -1,6 +1,7 @@
 const { isEmail } = require("valiend");
 const md5 = require("md5");
 const userServices = require("./user.services");
+const productServices = require('../product/product.service');
 
 
 class userController {
@@ -61,6 +62,20 @@ class userController {
             }
         } catch (err) {
             next(err);
+        }
+    }
+
+    async addToBasket(req,res,next){
+        try {
+            const {email,productId,count} = req.body;
+            const validateProductId = productServices.getById(productId);
+            if(validateProductId !== null){
+                const result = await userServices.addToBasket(email,productId,count);
+                console.log(result);
+                res.send(result)
+            }
+        } catch (err) {
+            next(err)
         }
     }
 }
