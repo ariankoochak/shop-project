@@ -48,7 +48,9 @@ class userServices {
                 for (const product of user.liveBasket) {
                     if(product[0] === productId){
                         flag = true
-                        pushArr.push([product[0],product[1]+count])
+                        if (product[1] + count > 0){
+                            pushArr.push([product[0], product[1] + count]);
+                        }
                     }
                     else{
                         pushArr.push(product)

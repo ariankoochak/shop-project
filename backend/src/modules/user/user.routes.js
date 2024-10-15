@@ -6,8 +6,7 @@ router.post("/create",userController.create);
 router.get("/auth",userController.authentication);
 router.get("/reset-pass",userController.resetPassword);
 router.post("/basket/add", userController.addToBasket);
-//FIXME: add true method for remove from basket
-router.post("/basket/remove", userController.create);
+router.post("/basket/remove", userController.removeFromBasket);
 
 
 module.exports = router;

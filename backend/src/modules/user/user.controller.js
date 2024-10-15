@@ -32,7 +32,10 @@ class userController {
     async authentication(req, res, next) {
         try {
             const { email, password } = req.body;
-            const result = await userServices.authentication(email, md5(password));
+            const result = await userServices.authentication(
+                email,
+                md5(password)
+            );
             if (result !== false) {
                 res.status = 200;
                 res.send(result);
@@ -48,16 +51,41 @@ class userController {
     }
     async resetPassword(req, res, next) {
         try {
-            const { email, oldPassword,newPassword } = req.body;
-            const result = await userServices.resetPassword(email,md5(oldPassword),md5(newPassword));
-            if(result?.modifiedCount){
+            const { email, oldPassword, newPassword } = req.body;
+            const result = await userServices.resetPassword(
+                email,
+                md5(oldPassword),
+                md5(newPassword)
+            );
+            if (result?.modifiedCount) {
                 res.status = 201;
-                res.send('ok')
+                res.send("ok");
+            } else {
+                throw {
+                    status: 400,
+                    message: "bad request",
+                };
             }
-            else{
-                throw{
-                    status : 400,
-                    message : "bad request"
+        } catch (err) {
+            next(err);
+        }
+    }
+
+    async addToBasket(req, res, next) {
+        try {
+            const { email, productId, count } = req.body;
+            const validateProductId = productServices.getById(productId);
+            if (validateProductId !== null) {
+                const result = await userServices.changeBasket(
+                    email,
+                    productId,
+                    Number(count)
+                );
+                if (result?.modifiedCount === 1) {
+                    res.status = 201;
+                    res.send("updated successfully");
+                } else {
+                    throw {};
                 }
             }
         } catch (err) {
@@ -65,22 +93,25 @@ class userController {
         }
     }
 
-    async addToBasket(req,res,next){
+    async removeFromBasket(req, res, next) {
         try {
-            const {email,productId,count} = req.body;
+            const { email, productId, count } = req.body;
             const validateProductId = productServices.getById(productId);
-            if(validateProductId !== null){
-                const result = await userServices.changeBasket(email,productId,Number(count));
-                if(result?.modifiedCount === 1){
+            if (validateProductId !== null) {
+                const result = await userServices.changeBasket(
+                    email,
+                    productId,
+                    -Number(count)
+                );
+                if (result?.modifiedCount === 1) {
                     res.status = 201;
-                    res.send('updated successfully')
-                }
-                else{
-                    throw{}
+                    res.send("updated successfully");
+                } else {
+                    throw {};
                 }
             }
         } catch (err) {
-            next(err)
+            next(err);
         }
     }
 }
