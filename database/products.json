@@ -3,487 +3,487 @@
         "name": "Intel Core i9-12900K",
         "price": "25000000",
         "category": "CPU",
-        "imageName": "intelcorei912900k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 9 5950X",
         "price": "23000000",
         "category": "CPU",
-        "imageName": "amdryzen95950x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i7-12700K",
         "price": "18000000",
         "category": "CPU",
-        "imageName": "intelcorei712700k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 7 5800X",
         "price": "15000000",
         "category": "CPU",
-        "imageName": "amdryzen75800x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i5-12600K",
         "price": "12000000",
         "category": "CPU",
-        "imageName": "intelcorei512600k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 5 5600X",
         "price": "10000000",
         "category": "CPU",
-        "imageName": "amdryzen55600x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i3-12100",
         "price": "7000000",
         "category": "CPU",
-        "imageName": "intelcorei312100"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 3 3300X",
         "price": "6000000",
         "category": "CPU",
-        "imageName": "amdryzen33300x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Pentium G6400",
         "price": "4000000",
         "category": "CPU",
-        "imageName": "intelpentiumg6400"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Athlon 3000G",
         "price": "3500000",
         "category": "CPU",
-        "imageName": "amdathlon3000g"
+        "imageName": "amdCpu"
     },
 
     {
         "name": "NVIDIA GeForce RTX 4090",
         "price": "80000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx4090"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6900 XT",
         "price": "75000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6900xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce RTX 3080",
         "price": "60000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx3080"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6800 XT",
         "price": "55000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6800xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce RTX 3070",
         "price": "45000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx3070"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6700 XT",
         "price": "40000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6700xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce RTX 3060 Ti",
         "price": "35000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx3060ti"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6600 XT",
         "price": "30000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6600xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce GTX 1660 Super",
         "price": "25000000",
         "category": "GPU",
-        "imageName": "nvidiageforcegtx1660super"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 5600 XT",
         "price": "20000000",
         "category": "GPU",
-        "imageName": "amdradeonrx5600xt"
+        "imageName": "amdGpu"
     },
 
     {
         "name": "Corsair Crystal Series 680X",
         "price": "15000000",
         "category": "Case",
-        "imageName": "corsaircrystalseries680x"
+        "imageName": "case"
     },
     {
         "name": "NZXT H510 Elite",
         "price": "13000000",
         "category": "Case",
-        "imageName": "nzxth510elite"
+        "imageName": "case"
     },
     {
         "name": "Phanteks Eclipse P600S",
         "price": "12000000",
         "category": "Case",
-        "imageName": "phantekseclipsep600s"
+        "imageName": "case"
     },
     {
         "name": "Lian Li PC-O11 Dynamic",
         "price": "11000000",
         "category": "Case",
-        "imageName": "lianlipco11dynamic"
+        "imageName": "case"
     },
     {
         "name": "Cooler Master MasterCase H500M",
         "price": "10000000",
         "category": "Case",
-        "imageName": "coolermastermastercaseh500m"
+        "imageName": "case"
     },
     {
         "name": "Fractal Design Meshify C",
         "price": "9000000",
         "category": "Case",
-        "imageName": "fractaldesignmeshifyc"
+        "imageName": "case"
     },
     {
         "name": "be quiet! Dark Base Pro 900",
         "price": "8500000",
         "category": "Case",
-        "imageName": "bequietdarkbasepro900"
+        "imageName": "case"
     },
     {
         "name": "Corsair iCUE 4000X RGB",
         "price": "8000000",
         "category": "Case",
-        "imageName": "corsairicue4000xrgb"
+        "imageName": "case"
     },
     {
         "name": "Thermaltake Core P3",
         "price": "7500000",
         "category": "Case",
-        "imageName": "thermaltakecorep3"
+        "imageName": "case"
     },
     {
         "name": "NZXT H510",
         "price": "7000000",
         "category": "Case",
-        "imageName": "nzxth510"
+        "imageName": "case"
     },
 
     {
         "name": "ASUS ROG Strix Z690-E",
         "price": "25000000",
         "category": "Motherboard",
-        "imageName": "asusrogstrixz690e"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI MPG Z690 Carbon WiFi",
         "price": "23000000",
         "category": "Motherboard",
-        "imageName": "msimpgz690carbonwifi"
+        "imageName": "motherboard"
     },
     {
         "name": "Gigabyte AORUS Master Z690",
         "price": "22000000",
         "category": "Motherboard",
-        "imageName": "gigabyteaorusmasterz690"
+        "imageName": "motherboard"
     },
     {
         "name": "ASRock Z690 Taichi",
         "price": "21000000",
         "category": "Motherboard",
-        "imageName": "asrockz690taichi"
+        "imageName": "motherboard"
     },
     {
         "name": "ASUS ROG Maximus XIII Hero",
         "price": "20000000",
         "category": "Motherboard",
-        "imageName": "asusrogmaximusxiiihhero"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI MEG Z490 ACE",
         "price": "18000000",
         "category": "Motherboard",
-        "imageName": "msimegz490ace"
+        "imageName": "motherboard"
     },
     {
         "name": "Gigabyte Z490 AORUS Elite",
         "price": "17000000",
         "category": "Motherboard",
-        "imageName": "gigabytez490aoruselite"
+        "imageName": "motherboard"
     },
     {
         "name": "ASRock Z490 Phantom Gaming",
         "price": "16000000",
         "category": "Motherboard",
-        "imageName": "asrockz490phantomgaming"
+        "imageName": "motherboard"
     },
     {
         "name": "ASUS TUF Gaming B550-PLUS",
         "price": "14000000",
         "category": "Motherboard",
-        "imageName": "asustufgamingb550plus"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI B550 Tomahawk",
         "price": "12000000",
         "category": "Motherboard",
-        "imageName": "msib550tomahawk"
+        "imageName": "motherboard"
     },
 
     {
         "name": "Intel Core i9-13900K",
         "price": "27000000",
         "category": "CPU",
-        "imageName": "intelcorei913900k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 9 7900X",
         "price": "24000000",
         "category": "CPU",
-        "imageName": "amdryzen97900x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i7-13700K",
         "price": "19000000",
         "category": "CPU",
-        "imageName": "intelcorei713700k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 7 7700X",
         "price": "17000000",
         "category": "CPU",
-        "imageName": "amdryzen77700x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i5-13600K",
         "price": "14000000",
         "category": "CPU",
-        "imageName": "intelcorei513600k"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 5 7600X",
         "price": "11000000",
         "category": "CPU",
-        "imageName": "amdryzen57600x"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Core i3-13100",
         "price": "8000000",
         "category": "CPU",
-        "imageName": "intelcorei313100"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Ryzen 3 5300G",
         "price": "6500000",
         "category": "CPU",
-        "imageName": "amdryzen35300g"
+        "imageName": "amdCpu"
     },
     {
         "name": "Intel Pentium G6600",
         "price": "4500000",
         "category": "CPU",
-        "imageName": "intelpentiumg6600"
+        "imageName": "intelCpu"
     },
     {
         "name": "AMD Athlon 320GE",
         "price": "3700000",
         "category": "CPU",
-        "imageName": "amdathlon320ge"
+        "imageName": "amdCpu"
     },
 
     {
         "name": "NVIDIA GeForce RTX 4080",
         "price": "78000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx4080"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 7900 XTX",
         "price": "74000000",
         "category": "GPU",
-        "imageName": "amdradeonrx7900xtx"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce RTX 3070 Ti",
         "price": "50000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx3070ti"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6800",
         "price": "52000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6800"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce RTX 3060",
         "price": "34000000",
         "category": "GPU",
-        "imageName": "nvidiageforcertx3060"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 6650 XT",
         "price": "31000000",
         "category": "GPU",
-        "imageName": "amdradeonrx6650xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce GTX 1650 Super",
         "price": "22000000",
         "category": "GPU",
-        "imageName": "nvidiageforcegtx1650super"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 5500 XT",
         "price": "18000000",
         "category": "GPU",
-        "imageName": "amdradeonrx5500xt"
+        "imageName": "amdGpu"
     },
     {
         "name": "NVIDIA GeForce GTX 1050 Ti",
         "price": "15000000",
         "category": "GPU",
-        "imageName": "nvidiageforcegtx1050ti"
+        "imageName": "nvidiaGpu"
     },
     {
         "name": "AMD Radeon RX 570",
         "price": "14000000",
         "category": "GPU",
-        "imageName": "amdradeonrx570"
+        "imageName": "amdGpu"
     },
 
     {
         "name": "Corsair Carbide Series 275R",
         "price": "6000000",
         "category": "Case",
-        "imageName": "corsaircarbideseries275r"
+        "imageName": "case"
     },
     {
         "name": "NZXT H710",
         "price": "9000000",
         "category": "Case",
-        "imageName": "nzxth710"
+        "imageName": "case"
     },
     {
         "name": "Phanteks Enthoo Evolv X",
         "price": "13000000",
         "category": "Case",
-        "imageName": "phanteksenthooevolvx"
+        "imageName": "case"
     },
     {
         "name": "Lian Li Lancool II Mesh",
         "price": "8000000",
         "category": "Case",
-        "imageName": "lianlilancooliimesh"
+        "imageName": "case"
     },
     {
         "name": "Cooler Master MasterBox Q300L",
         "price": "5000000",
         "category": "Case",
-        "imageName": "coolermastermasterboxq300l"
+        "imageName": "case"
     },
     {
         "name": "Fractal Design Define 7",
         "price": "11000000",
         "category": "Case",
-        "imageName": "fractaldesigndefine7"
+        "imageName": "case"
     },
     {
         "name": "be quiet! Pure Base 500DX",
         "price": "7000000",
         "category": "Case",
-        "imageName": "bequietpurebase500dx"
+        "imageName": "case"
     },
     {
         "name": "Corsair 5000D Airflow",
         "price": "8500000",
         "category": "Case",
-        "imageName": "corsair5000dairflow"
+        "imageName": "case"
     },
     {
         "name": "Thermaltake View 71",
         "price": "10000000",
         "category": "Case",
-        "imageName": "thermaltakeview71"
+        "imageName": "case"
     },
     {
         "name": "NZXT H210",
         "price": "6500000",
         "category": "Case",
-        "imageName": "nzxth210"
+        "imageName": "case"
     },
 
     {
         "name": "ASUS ROG Strix X570-E",
         "price": "19000000",
         "category": "Motherboard",
-        "imageName": "asusrogstrixx570e"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI MAG B550M Mortar",
         "price": "10000000",
         "category": "Motherboard",
-        "imageName": "msimagb550mmortar"
+        "imageName": "motherboard"
     },
     {
         "name": "Gigabyte B550 AORUS Pro",
         "price": "15000000",
         "category": "Motherboard",
-        "imageName": "gigabyeb550aoruspro"
+        "imageName": "motherboard"
     },
     {
         "name": "ASRock B450 Steel Legend",
         "price": "8000000",
         "category": "Motherboard",
-        "imageName": "asrockb450steelegend"
+        "imageName": "motherboard"
     },
     {
         "name": "ASUS TUF Gaming X570-PLUS",
         "price": "16000000",
         "category": "Motherboard",
-        "imageName": "asustufgamingx570plus"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI B450 Gaming Pro Carbon",
         "price": "9000000",
         "category": "Motherboard",
-        "imageName": "msib450gamingprocarbon"
+        "imageName": "motherboard"
     },
     {
         "name": "Gigabyte AORUS X570 Master",
         "price": "18000000",
         "category": "Motherboard",
-        "imageName": "gigabyteaorusx570master"
+        "imageName": "motherboard"
     },
     {
         "name": "ASRock B550M Pro4",
         "price": "7000000",
         "category": "Motherboard",
-        "imageName": "asrockb550mpro4"
+        "imageName": "motherboard"
     },
     {
         "name": "ASUS Prime B450M-A",
         "price": "6000000",
         "category": "Motherboard",
-        "imageName": "asusprimeb450ma"
+        "imageName": "motherboard"
     },
     {
         "name": "MSI B450 Tomahawk MAX",
         "price": "11000000",
         "category": "Motherboard",
-        "imageName": "msib450tomahawkmax"
+        "imageName": "motherboard"
     }
 ]
