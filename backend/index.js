@@ -10,6 +10,8 @@ require('./src/config/mongoose/mongoose.config');
 
 app.use(cors({ origin: "http://localhost:3001", credentials: true }));
 
+app.use(express.static("public"));
+
 app.use(express.json());
 
 app.use(allRoutes);
