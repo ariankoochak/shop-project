@@ -1,0 +1,35 @@
+.user-datas{
+    display: inline-block;
+    text-align: center;
+}
+
+.user-datas span{
+    display: block;
+    font-size: 20px;
+}
+
+.user-datas input{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border: 2px solid #387478;
+    border-radius: 8px;
+    background-color: inherit;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.user-datas input:focus{
+    outline: none;
+}
+
+.user-datas button{
+    width: 86%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    background-color: #387478;
+    color: white;
+}
