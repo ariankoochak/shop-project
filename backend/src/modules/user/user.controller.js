@@ -11,7 +11,7 @@ class userController {
             if (isEmail(email) === true) {
                 const result = await userServices.create(email, md5(password));
                 if (result !== false) {
-                    res.status = 201;
+                    res.status(201);
                     res.send(result);
                 } else {
                     throw {
@@ -37,7 +37,7 @@ class userController {
                 md5(password)
             );
             if (result !== false) {
-                res.status = 200;
+                res.status(200);
                 res.send(result);
             } else {
                 throw {
@@ -58,8 +58,12 @@ class userController {
                 md5(newPassword)
             );
             if (result?.modifiedCount) {
-                res.status = 201;
-                res.send("ok");
+                const userData = await userServices.authentication(
+                    email,
+                    md5(newPassword)
+                );
+                res.status(201);
+                res.send(userData);
             } else {
                 throw {
                     status: 400,
@@ -92,7 +96,7 @@ class userController {
                     Number(count)
                 );
                 if (result?.modifiedCount === 1) {
-                    res.status = 201;
+                    res.status(201);
                     res.send("updated successfully");
                 } else {
                     throw {};
@@ -114,7 +118,7 @@ class userController {
                     -Number(count)
                 );
                 if (result?.modifiedCount === 1) {
-                    res.status = 201;
+                    res.status(201);
                     res.send("updated successfully");
                 } else {
                     throw {};
