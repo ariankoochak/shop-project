@@ -6,6 +6,7 @@ import '../../assets/styles/signUpInput.style.css'
 export default function SignUpInput() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [err,setErr] = useState("")
     const [retypePassword,setRetypePassword] = useState("");
     const navigate = useNavigate();
 
@@ -21,18 +22,19 @@ export default function SignUpInput() {
         setRetypePassword(e.target.value);
     }
 
-    const handleClickLogin = ()=>{
+    const handleClickSignUp = ()=>{
         navigate('/login')
     }
 
   return (
     <div className='sign-up-input'>
         <h3>Darhamarket</h3>
+        <p>{err}</p>
         <input type="text" value={email} placeholder='Email' onChange={handleChangeEmailInput}/>
         <input type="password" value={password} placeholder='password' onChange={handleChangePasswordInput}/>
         <input type="password" value={retypePassword} placeholder='retype password' onChange={handleChangeRetypePassword}/>
         <button>Sign Up</button>
-        <span className='text'>Already have and Account? <span className='sign-up' onClick={handleClickLogin}>Login</span></span>
+        <span className='text'>Already have and Account? <span className='sign-up' onClick={handleClickSignUp}>Sign Up</span></span>
       </div>
   )
 }
