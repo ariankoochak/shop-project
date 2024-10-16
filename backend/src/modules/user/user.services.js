@@ -7,7 +7,7 @@ class userServices {
             const emailExist = await userModel.findOne({ email: email });
             if (emailExist === null) {
                 const result = await userModel.create({ email, password });
-                return result._id ? true : false;
+                return result._id ? result : false;
             }
             return false;
         } catch (err) {

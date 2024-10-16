@@ -10,9 +10,9 @@ class userController {
             const { email, password } = req.body;
             if (isEmail(email) === true) {
                 const result = await userServices.create(email, md5(password));
-                if (result === true) {
+                if (result !== false) {
                     res.status = 201;
-                    res.send("user created successfully");
+                    res.send(result);
                 } else {
                     throw {
                         status: 409,
