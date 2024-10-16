@@ -22,9 +22,10 @@ export default function SignUpInput() {
         setRetypePassword(e.target.value);
     }
 
-    const handleClickSignUp = ()=>{
+    const handleClickLogin = ()=>{
         navigate('/login')
     }
+
 
   return (
     <div className='sign-up-input'>
@@ -34,7 +35,7 @@ export default function SignUpInput() {
         <input type="password" value={password} placeholder='password' onChange={handleChangePasswordInput}/>
         <input type="password" value={retypePassword} placeholder='retype password' onChange={handleChangeRetypePassword}/>
         <button>Sign Up</button>
-        <span className='text'>Already have and Account? <span className='sign-up' onClick={handleClickSignUp}>Sign Up</span></span>
+        <span className='text'>Already have and Account? <span className='sign-up' onClick={handleClickLogin}>Login</span></span>
       </div>
   )
 }
