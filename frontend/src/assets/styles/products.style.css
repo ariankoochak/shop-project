@@ -1,0 +1,29 @@
+.products-container {
+    text-align: center;
+}
+
+.products-container .product{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer !important;
+}
+
+.products-container .product img{
+    width: 95%;
+    border-radius: 12px;
+}
+
+
+
+.products-container .product .name,.products-container .product .price{
+    display: block;
+}
+
+.products-container .product .name{
+    font-size: 14px;
+}
