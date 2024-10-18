@@ -14,10 +14,13 @@ export const userDataSlice = createSlice({
         resetUserData: (state) => {
             state.userData = {};
         },
+        updateBasket : (state,action)=>{
+            state.userData.liveBasket = [...action.payload]
+        }
     },
 });
 
 // Action creators are generated for each case reducer function
-export const { setUserData, resetUserData } = userDataSlice.actions;
+export const { setUserData, resetUserData, updateBasket } = userDataSlice.actions;
 
 export default userDataSlice.reducer;

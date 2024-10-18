@@ -1,4 +1,5 @@
-.product-container div{
+.product-container .image-container,
+.product-container .product-data{
     width: 49%;
     display: inline-block;
     text-align: center;
@@ -24,4 +25,16 @@
     display: block;
     background-color: #387478;
     color: white;
+    cursor: pointer;
+}
+
+.product-container .change-num-button{
+    width: 5%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 20px 10px;
+    background-color: #387478;
+    color: white;
+    cursor: pointer;
 }
