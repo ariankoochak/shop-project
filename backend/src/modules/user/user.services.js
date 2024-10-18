@@ -60,7 +60,8 @@ class userServices {
                 if(flag === false){
                     pushArr.push([productId,count])
                 }
-                return await userModel.updateOne({email : email},{$set : {liveBasket : [...pushArr]}});
+                await userModel.updateOne({email : email},{$set : {liveBasket : [...pushArr]}});
+                return await userModel.findOne({email:email})
             }
         } catch (err) {
             return err

@@ -95,9 +95,9 @@ class userController {
                     productId,
                     Number(count)
                 );
-                if (result?.modifiedCount === 1) {
+                if (result) {
                     res.status(201);
-                    res.send("updated successfully");
+                    res.send(result);
                 } else {
                     throw {};
                 }
@@ -115,11 +115,11 @@ class userController {
                 const result = await userServices.changeBasket(
                     email,
                     productId,
-                    -Number(count)
+                    Number(count)
                 );
-                if (result?.modifiedCount === 1) {
+                if (result) {
                     res.status(201);
-                    res.send("updated successfully");
+                    res.send(result);
                 } else {
                     throw {};
                 }
