@@ -77,7 +77,7 @@ class userController {
 
     async getBasket(req,res,next){
         try {
-            const {email} = req.body;
+            const {email} = req.params;
             const result = await userServices.getBasket(email);
             res.send(result);
         } catch (err) {

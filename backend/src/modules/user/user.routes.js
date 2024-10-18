@@ -7,7 +7,7 @@ router.post("/auth",userController.authentication);
 router.post("/reset-pass",userController.resetPassword);
 router.post("/basket/add", userController.addToBasket);
 router.post("/basket/remove", userController.removeFromBasket);
-router.get("/basket",userController.getBasket);
+router.get("/basket/:email",userController.getBasket);
 
 
 module.exports = router;
