@@ -1,0 +1,27 @@
+.product-container div{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-container .image-container img{
+    width: 50%;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.product-container .product-data{
+    position: relative;
+    top: -100px;
+}
+
+.product-container button{
+        width: 26%;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    background-color: #387478;
+    color: white;
+}
