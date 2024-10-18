@@ -9,10 +9,10 @@ export const openProductDataSlice = createSlice({
     initialState,
     reducers: {
         setOpenProductData: (state, action) => {
-            state.userData = { ...action.payload };
+            state.openProductData = { ...action.payload };
         },
         resetOpenProductData: (state) => {
-            state.userData = {};
+            state.openProductData = {};
         },
     },
 });
