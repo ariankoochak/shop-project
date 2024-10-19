@@ -128,6 +128,16 @@ class userController {
             next(err);
         }
     }
+
+    async emptyBasket(req,res,next){
+        try {
+            const {email} = req.params;
+            const result = userServices.emptyBasket(email);
+            res.status(201).send(result)
+        } catch (err) {
+            next(err)
+        }
+    }
 }
 
 module.exports = new userController();

@@ -89,6 +89,15 @@ class userServices {
             return err
         }
     }
+
+    async emptyBasket(email){
+        try {
+            const result = await userModel.updateOne({email : email},{$set : {liveBasket : []}});
+            return result            
+        } catch (err) {
+            return err
+        }
+    }
 }
 
 module.exports = new userServices();
