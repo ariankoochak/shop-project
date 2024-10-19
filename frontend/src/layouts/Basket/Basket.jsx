@@ -4,11 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateBasket } from "../../utils/store/slices/userData";
 import axios from 'axios';
 import '../../assets/styles/basket.style.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Basket() {
   const BACKEND_URL = "http://localhost:3000";
   const userData = useSelector((state) => state.userData.userData);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [basket,setBasket] = useState([]);
   useEffect(()=>{
     const API = `${BACKEND_URL}/user/basket/${userData.email}`;
@@ -78,6 +80,9 @@ export default function Basket() {
         </div>)
       })
   }
+  const handleClickCheckout = ()=>{
+    navigate('/checkout');
+  }
   return (
     <>
       <Navbar selectedPage={'basket'}/>
@@ -85,7 +90,7 @@ export default function Basket() {
           {renderBasketItems()}
       </div>
       <div className="checkout">
-        <button>Checkout</button>
+        {userData.liveBasket.length > 0 && <button onClick={handleClickCheckout}>Checkout</button>}
       </div>
     </>
   )
