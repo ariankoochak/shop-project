@@ -83,11 +83,21 @@ export default function Basket() {
   const handleClickCheckout = ()=>{
     navigate('/checkout');
   }
+  const renderSumPrice = () =>{
+    let sum = 0
+    for(const product of basket){
+        sum += product.count * Number(product.price)
+    }
+    return sum
+  }
   return (
     <>
       <Navbar selectedPage={'basket'}/>
       <div className="basket-list">
           {renderBasketItems()}
+      </div>
+      <div className="sum-price">
+        <span>total price : {renderSumPrice()}T</span>
       </div>
       <div className="checkout">
         {userData.liveBasket.length > 0 && <button onClick={handleClickCheckout}>Checkout</button>}

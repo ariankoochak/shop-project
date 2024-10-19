@@ -59,3 +59,8 @@
     color: white;
     cursor: pointer;
 }
+
+.sum-price span{
+    display: block;
+    text-align: center;
+}
