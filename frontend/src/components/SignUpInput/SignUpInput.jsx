@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/signUpInput.style.css'
 import { isEmail } from 'valiend';
+import { useDispatch } from "react-redux";
+import { setUserData } from "../../utils/store/slices/userData";
 import axios from 'axios';
 
 export default function SignUpInput() {
@@ -11,7 +13,7 @@ export default function SignUpInput() {
     const [err,setErr] = useState("")
     const [retypePassword,setRetypePassword] = useState("");
     const navigate = useNavigate();
-
+    const dispatch = useDispatch();
     const handleChangeEmailInput = (e) => {
         setEmail(e.target.value);
     };
@@ -46,7 +48,8 @@ export default function SignUpInput() {
                     url: API,
                 })
                     .then((response) => {
-                        if (response.status === 200) {
+                        console.log(response);
+                        if (response.status === 201) {
                             dispatch(
                                 setUserData({
                                     id: response.data._id,
