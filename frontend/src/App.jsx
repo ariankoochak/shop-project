@@ -9,6 +9,7 @@ import Product from './layouts/Product/Product';
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Checkout from './layouts/Checkout/Checkout';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
               <Route path="/categories" element={<Categories />} />
               <Route path="/basket" element={<Basket />} />
               <Route path="/product" element={<Product />} />
+              <Route path="/checkout" element={<Checkout />} />
           </Routes>
       </BrowserRouter>
   );
