@@ -1,0 +1,13 @@
+.checkout-page {
+    text-align: center;
+    margin-top: 300px;
+}
+
+.checkout-page h3{
+    display: inline-block;
+    background-color: #387478;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
