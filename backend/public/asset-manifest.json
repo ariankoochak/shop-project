@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "http://localhost:3000/static/css/main.81f05e3b.css",
+    "main.js": "http://localhost:3000/static/js/main.67a2bcf1.js",
+    "static/media/graphicCard.jpg": "/http://localhost:3000/static/media/graphicCard.9ea3d1e7a74cdf540253.jpg",
+    "static/media/cpu.jpg": "http://localhost:3000/static/media/cpu.01dd8845f88ad996d550.jpg",
+    "static/media/motherboard.jpg": "http://localhost:3000/static/media/motherboard.81794278194d30e3e0e5.jpg",
+    "static/media/case.jpg": "http://localhost:3000/static/media/case.2c2caea834a4885179e5.jpg",
+    "index.html": "http://localhost:3000/index.html",
+    "main.81f05e3b.css.map": "http://localhost:3000/static/css/main.81f05e3b.css.map",
+    "main.67a2bcf1.js.map": "http://localhost:3000/static/js/main.67a2bcf1.js.map"
+  },
+  "entrypoints": [
+    "http://localhost:3000/static/css/main.81f05e3b.css",
+    "http://localhost:3000/static/js/main.67a2bcf1.js"
+  ]
+}
